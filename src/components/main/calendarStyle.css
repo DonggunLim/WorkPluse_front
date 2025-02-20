@@ -1,0 +1,62 @@
+.react-calendar {
+  box-sizing: content-box;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  border-radius: 0.5rem;
+  border-width: 1px;
+  border-color: rgb(148 163 184);
+  padding: 2rem 1rem 1rem 1rem;
+}
+
+/* Header  */
+.react-calendar__navigation {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.react-calendar__viewContainer {
+  height: 100%;
+}
+
+.react-calendar__month-view {
+  height: 100%;
+}
+
+.react-calendar__month-view__weekdays {
+  height: 20% !important;
+}
+
+.react-calendar__month-view > div {
+  height: 100%;
+}
+.react-calendar__month-view > div > div {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.react-calendar__month-view__weekdays {
+  width: 100%;
+  height: 6% !important;
+}
+
+.react-calendar__month-view__days {
+  height: 18%;
+}
+
+/* 날짜 셀 */
+.react-calendar__month-view__days__day {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: flex-start;
+  gap: 16px;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
